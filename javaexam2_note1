@@ -1,0 +1,220 @@
+package JavaExample2;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public enum Nation {
+        Thai , English , India ;
+    }
+
+    public static void main(String[] args) {
+
+        // Example ep.4/4 Arrays > 1 มิติ
+//        int[] customerList = {10,20,30,40,50,60};
+//        System.out.println(customerList[3]);
+//
+//        String[] [] customerList  = new String[10][5];
+//        customerList[0][0] = "Sompong";
+//        customerList[0][1] = "Napai";
+//        customerList[0][2] = "54";
+//        customerList[0][3] = "Thai";
+//
+//        customerList[1][0] = "Sommee";
+//        customerList[1][1] = "kuki";
+//        customerList[1][2] = "67";
+//        customerList[1][3] = "Thai";
+//
+//        System.out.println(customerList[0][0]+"  " + customerList[0][1]+"  " + customerList[0][2] +"  "+ customerList[0][3]);
+
+
+        // Example ep.4/2  Arrays 1 มิติ
+//        int[] price = new int[10];
+//        for (int i = 0 ; i <10 ; i++ )
+//        {
+//            price[i] = 5*(i+1);
+//        }
+//
+//        for (int i = 0 ; i < 10 ; i++)
+//        {
+//            System.out.println(price[i] + " USD");
+//        }
+
+
+        // Example ep.3/12 User and Pass by Loop
+//        String username = "Admin";
+//        String password = "12345";
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Username :");
+//        String inputUser = scanner.nextLine();
+//        System.out.println("Password :");
+//        String inputPass = scanner.nextLine();
+//        if (username.equals(inputUser) && password.equals(inputPass))
+//        {
+//            System.out.println("*** Login success ***");
+//        }
+//        else {
+//            System.out.println("Login fail !!");
+//        }
+
+
+
+        // Example ep.3/11 Loop while make login
+//        String password = "ABAB";
+//        String inputpassword;
+//        while (true)
+//        {
+//            Scanner scanner = new Scanner(System.in);
+//            inputpassword = scanner.nextLine();
+//            if (password.equals(inputpassword))
+//            {
+//                System.out.println("Good");
+//                break;
+//            }
+//        }
+
+
+        // Example ep.3/10 Loop by / for()
+//        for (int count = 0; count < 10; count--)
+//        {
+//            System.out.println(count+" Hi");
+//
+//        }
+
+
+
+        // Example ep.3/9 Loop  [Do / while()] ระบบ Login
+//        String password = "12345";
+//        String inputPassword;
+//        do
+//        {
+//            Scanner scanner = new Scanner(System.in);
+//            inputPassword = scanner.nextLine();
+//
+//        }
+//        while(!password.equals(inputPassword));
+//        System.out.println("Let's gooo");
+
+
+
+
+        // Example ep.3/8 make Loop by / while
+//        int i = 0;
+//        while (i<10)
+//        {
+//            System.out.println("Hello World!!");
+//            i++;
+//        }
+
+
+
+        // Example ep.3/6 สอนใช้ switch() / case / break; / default
+//        Scanner scanner = new Scanner(System.in);
+//        int userInput = scanner.nextInt();
+//        switch (userInput) {
+//            case 1 :
+//                System.out.println("Hello World!!");
+//                break;
+//            case 2 :
+//                System.out.println("How are you ?");
+//                break;
+//            case 3 :
+//                System.out.println("Bye Bye");
+//                break;
+//            default :
+//                System.out.println("try again");
+//        }
+
+
+
+        // Example ep.3/5 เงื่อนไขซ้อนเงื่อนไข และ ทําคําสั้งให้ดูง่ายขึ้นน่าใช้ (เป็นค่าพามรี่ต้องใช้ == ,เป็นตัวอักษรหรือคําต้องใช้ .equals(".."))
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input Food Type :");
+//        String inputFoodType = scanner.nextLine();
+//        System.out.println("Input Flavor :");
+//        String inputFlavor = scanner.nextLine();
+//
+//        if (inputFoodType.equals("Thai"))
+//        {
+//            if (inputFlavor.equals("Spicy"))
+//            {
+//                System.out.println("Tom yum kung");
+//            }
+//            else if (inputFlavor.equals("Salty"))
+//            {
+//                System.out.println("Fried Pork");
+//            }
+//            else
+//            {
+//                System.out.println("Padthai , etc");
+//            }
+//        }
+//        else
+//        {
+//            if (inputFlavor.equals("Salty"))
+//            {
+//                System.out.println("French fries");
+//            }
+//            else {
+//                System.out.println("Humberger");
+//            }
+//        }
+
+
+
+        // Example ep.3/3 เงื่อนไข else-if
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("You have money (BATH):");
+//        int money = scanner.nextInt();
+//        if (money >= 200) {
+//            System.out.println("Krapao + Cola + Snack");
+//        }
+//        else if (money >= 100) {
+//            System.out.println("Krapao + Cola");
+//        }
+//        else if (money >= 50) {
+//            System.out.println("krapao");
+//        }
+//        else {
+//            System.out.println("Not Enough");
+//        }
+
+
+        // Example ep.3/2 การตั้งเงือนไข basic
+//        double Money = 19;
+//        if (Money > 20)
+//        {
+//            System.out.println("ซื้อขนม");
+//        }
+//        else
+//        {
+//            System.out.println("หยอดกระปุก");
+//        }
+
+
+
+        // Example ep.2/5 โปรแกรมเปลี่ยนเงินดอลเป็นเงินบาท
+//        System.out.println("\"Input DollarMoney\" :");
+//        Scanner scanner = new Scanner(System.in);
+//        double MoneyofDollar = scanner.nextDouble();
+//        double TotalDollarToTHB = MoneyofDollar * 34.42 ;
+//        System.out.println(TotalDollarToTHB + " BATH");
+
+
+        // Example ep.2/3 เขียน 3 บรรทัดในคําสั่งเดียว
+//        System.out.println("Hello kong\nHello kong\nHello kong");
+
+
+        // Example ep.2/2 สร้างตัวรับ Input โดยใช้ Scanner
+//        Scanner scanner = new Scanner(System.in);
+//        String name = scanner.nextLine();
+//        System.out.println("Hello " + name + " !!!");
+
+
+        //  Example ep.1/9 เปลี่ยนString เป็นInt โดยใช้คําสั่ง Integer.parseInt()
+//        String NumofDate = "15";
+//        int DatetoInteger = Integer.parseInt(NumofDate);
+//        System.out.println(DatetoInteger + 7);
+//
+    }
+}
