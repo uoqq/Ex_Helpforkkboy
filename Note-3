@@ -1,0 +1,36 @@
+package collectionexample;
+
+import java.util.ArrayList;
+import java.util.*;
+
+public class CollectionExample {
+    public static void main(String[] args) {
+        Map map = new HashMap();
+        map.put("Eat","Eat it mean take food into your mouth");
+        map.put("John",18);
+        System.out.println( map.get("Eat"));
+
+    }
+
+}
+
+/////////    ArrayList    /////////////
+//        ArrayList<Customer> list = new ArrayList<Customer>();
+//        list.add(new Customer("A"));
+//        list.add(new Customer("B"));
+//        System.out.println(list.get(0).getName());
+//        System.out.println(list.get(1).getName());
+//        list.get(0).setName("KONG");
+///////////////////////////////////////////////////////////
+
+
+
+/////////////////       Set      ///////////////////////
+//    public static void main(String[] args) {
+////        Set<Integer> set = new HashSet<Integer>();
+////
+////        set.add(1);
+////        set.add(5);
+////        set.add(2);
+////        System.out.println(set);
+///////////////////////////////////////////////////////
